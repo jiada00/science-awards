@@ -35,4 +35,4 @@ yarn-error.log*
 next-env.d.ts
 
 # original data files
-/src/data/awards_*.json
+# /src/data/awards_*.json

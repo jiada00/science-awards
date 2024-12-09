@@ -9,7 +9,7 @@ const awardsData = {
 
 export function getAwards(language: 'zh' | 'en'): Award[] {
   return awardsData[language]
-    .map(item => ({
+    .map((item: Award) => ({
       title: item.title,
       summary: item.summary,
       category_level1: item.category_level1,
@@ -18,5 +18,5 @@ export function getAwards(language: 'zh' | 'en'): Award[] {
       url: item.url,
       pageviews: item.pageviews
     }))
-    .sort((a, b) => b.pageviews - a.pageviews)
+    .sort((a: Award, b: Award) => b.pageviews - a.pageviews)
 }
